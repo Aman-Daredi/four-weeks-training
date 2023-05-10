@@ -225,7 +225,6 @@
 
             // My Comment : Minimum Distnce of source from source will be always 0.
             distances[source] = 0;
-
             for (int count = 0; count < vertices - 1; count++)
             {
                 int u = MinimumDistance(distances, visited);

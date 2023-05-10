@@ -1,6 +1,6 @@
 ﻿namespace FactorialApp
 {
-    internal class Program
+     public class Program
     {
         public static void Main(string[] args)
         {
@@ -14,6 +14,11 @@
 
         public static long CalculateFactorial(int number)
         {
+
+            if (number < 0)
+            {
+                throw new ArgumentException();
+            }
             long factorial = 1;
             for (int i = 1; i <= number; i++)
             {
