@@ -13,12 +13,46 @@
             };
 
 
-            //Write queries using LINQ for following operations
-            //1. Get all people from USA
-            //2. Get all people above 30
-            //3. Sort people by name
-            //4. Project/Select only Name and Country of all people
 
+
+
+
+            
+
+            //Write queries using LINQ for following operations
+            
+            
+            //1. Get all people from USA
+            var queryForPeopleInUSA = people.Where(e => e.Country == "USA");
+            
+            foreach(var person in queryForPeopleInUSA)
+            {
+                Console.WriteLine("Name: {0}, Country: {1}", person.Name, person.Country);
+            }
+            
+            //2. Get all people above 30
+            var queryForPeopleAbove30 = people.Where(e => e.Age > 30);
+
+            foreach (var person in queryForPeopleAbove30)
+            {
+                Console.WriteLine("Name: {0}, Age: {1}", person.Name, person.Age);
+            }
+
+            //3. Sort people by name
+            var queryForSortPeopleByName = people.OrderBy(e => e.Name);
+
+            foreach (var person in queryForSortPeopleByName)
+            {
+                Console.WriteLine("Name: {0}, Country: {1}, Age: {2}", person.Name, person.Country, person.Age);
+            }
+
+            //4. Project/Select only Name and Country of all people
+            var queryForNameAndCountry = people.Select(p => new {p.Name, p.Country});
+
+            foreach (var person in queryForNameAndCountry)
+            {
+                Console.WriteLine("Name: {0}, Country: {1}", person.Name, person.Country);
+            }
         }
     }
 
