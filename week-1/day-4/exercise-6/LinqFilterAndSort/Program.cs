@@ -12,6 +12,8 @@
                 new Person {FirstName = "Meet", LastName = "Modi", Age = 16},
                 new Person {FirstName = "Nitin", LastName = "Adani", Age = 11},
                 new Person {FirstName = "Bahubali", LastName = "Ambani", Age = 19},
+                new Person {FirstName = "Bahubali", LastName = "Ambani", Age = 19},
+
 
             };
 
