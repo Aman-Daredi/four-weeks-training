@@ -6,12 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./hello.component.css']
 })
 export class HelloComponent {
-    name = 'Aman';
-    color = "blue";
-    default = "lightgray";
-    clicked = false;
-
-    click() {
-      this.clicked = !this.clicked;
-    }
+    name: string = 'Aman';
+    color: string = "blue";
 }
