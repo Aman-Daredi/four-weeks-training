@@ -1,0 +1,4 @@
+<h1>Hello {{name}}!</h1>
+<p>Click this button to make it {{color}}.</p>
+<button type="button" (click) = "changeColor()" [style.backgroundColor] = "color">Click Me!</button>
+<app-new-component [name] = "childName" [parentName] = "parentName"></app-new-component>
