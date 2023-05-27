@@ -1,0 +1,7 @@
+<button type="button" (click) = "createPost()">Create Post</button>
+<button type="button" (click) = "updatePost(1)">Update Post</button>
+<button type="button" (click) = "deletePost(1)">Delete Post</button>
+
+<div>
+    <p *ngFor = "let post of posts">{{post.title}} {{post.id}}</p>
+</div>
