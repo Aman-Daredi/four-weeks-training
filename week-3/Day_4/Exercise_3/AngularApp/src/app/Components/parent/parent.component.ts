@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { UserDataService } from 'src/app/Services/user-data.service';
+import { Component, OnInit } from "@angular/core";
+import { UserDataService } from "src/app/Services/user-data.service";
 
 @Component({
-  selector: 'app-parent',
-  templateUrl: './parent.component.html',
-  styleUrls: ['./parent.component.css'],
-  providers: [UserDataService]
+  selector: "app-parent",
+  templateUrl: "./parent.component.html",
+  styleUrls: ["./parent.component.css"],
+  providers: [UserDataService],
 })
 export class ParentComponent implements OnInit {
-  data: {name:string, email:string}[] = [];
+  data: { name: string; email: string }[] = [];
+  title = "aman";
   constructor(private userService: UserDataService) {}
 
   ngOnInit(): void {
