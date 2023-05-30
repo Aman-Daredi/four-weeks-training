@@ -1,0 +1,16 @@
+
+<div *ngIf="blogDetails !== null">
+    
+    <h1>{{blogDetails.title}}</h1>
+    
+    <p>{{blogDetails.body}}</p>
+</div>
+
+
+<h4 *ngIf="blogComments !== null">Comments</h4>
+<div *ngIf="blogComments !== null">
+    <p *ngFor="let com of blogComments">
+        {{com.body}}
+    </p>
+</div>
+

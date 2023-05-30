@@ -1,0 +1,9 @@
+<h2>Blog</h2>
+<ul>
+    <a routerLink='/blog/{{post.id}}' *ngFor="let post of blogPosts">
+        <li >
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.body }}</p>
+        </li>
+    </a>
+</ul>
