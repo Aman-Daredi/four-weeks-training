@@ -1,0 +1,13 @@
+li {
+    padding: 10px; 
+    background: lightcyan;
+    margin-bottom: 40px;
+    list-style: none;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+}

@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background: lightblue;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+nav a:hover, nav .active {
+    text-decoration: underline;
+    color: red;
+}
+
